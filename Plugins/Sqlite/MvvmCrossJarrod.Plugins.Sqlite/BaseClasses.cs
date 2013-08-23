@@ -192,7 +192,7 @@ namespace MvvmCrossJarrod.Plugins.Sqlite
     public interface IAsyncTableQuery<T>
         where T : new()
     {
-        //IAsyncTableQuery<T> Where(Expression<Func<T, bool>> predExpr);
+        IAsyncTableQuery<T> Where(Expression<Func<T, bool>> predExpr);
 
         IAsyncTableQuery<T> Skip(int n);
 
